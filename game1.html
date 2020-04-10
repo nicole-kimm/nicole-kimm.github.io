@@ -36,50 +36,15 @@
 
 <div style="width: 100%; overflow: hidden; background-color: pink;">
 
-    <div class="side-1" style="background-color: pink; float: left; width: 300px;">
+    <div class="side-1" style="background-color:  sky blue; float: left; width: 300px;">
     <center><img src="https://s-media-cache-ak0.pinimg.com/736x/86/d6/41/86d641fd767e458386a68bdbda187c0a.jpg" width="300px" height="600px"></img></center>
     </div>
     
-    <div class="side-2" style="background-color: pink; float: right; width: 300px;">
+    <div class="side-2" style="background-color:baby pink; float: right; width: 300px;">
     <center><img src="https://s-media-cache-ak0.pinimg.com/736x/86/d6/41/86d641fd767e458386a68bdbda187c0a.jpg" width="300px" height="600px"></img></center>
     </div>
     
 </div>
-
-<script>
-var secret_number = -1;
-var num_guesses = -1;
-var total_score = 0;
-var num_games_played = 0;
-function startGame() {
-    document.getElementById("output").innerHTML = "Guess the number between 0-99";
-    secret_number = Math.floor(Math.random() * 100);
-    /* window.alert(secret_number); */
-    num_guesses = 0;
-}
-function getUserGuess() {
-    var user_guess = document.getElementById("numberGuess").value;
-    if (user_guess <= 0) {
-        document.getElementById("output").innerHTML = "You entered a incorrect value. Guess again";
-    }
-    else { 
-        /* user guessed a number */
-        num_guesses += 1;
-        if (user_guess > secret_number) {
-            document.getElementById("output").innerHTML = "Guess lower than " + user_guess;
-        }
-        else if (user_guess < secret_number) {
-            document.getElementById("output").innerHTML = "Guess higher than " + user_guess;
-        }
-        else { /* user has guessed the secret number */
-            num_games_played += 1;
-            total_score += num_guesses;
-            var average_score = total_score/num_games_played;
-            document.getElementById("output").innerHTML = "Congrats you have guessed the number " + secret_number + " in " + num_guesses + " guesses!\n" + " Your average score in " + num_games_played + " games is " + average_score + ".";      
-        }
-        document.getElementById("numberGuess").value = " ";
-    } 
-}
     <button onclick="location.href='game2.html'" type="button"> Next Riddle</button>
       </body>
 </html>
