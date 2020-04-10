@@ -15,7 +15,13 @@
      <button type="button" onclick="alert('The police do not give him an address, so if he knows where the crime scene is, most possibly he is the one who has committed the crime')">Answer</button>
  v<button onclick="startGame()" style="background-color: purple; font-family:Garamond; font-size: 40px; color: white; padding:10px 20px; height:55; width:85;" >Play "Guess the Number" by clicking here!</button>
   </div> 
-  <p id="output" style="background-color:purple; color: white; text-align: center; font-size: 34px;">
+  <p id="output" style="background-color:blue; color: white; text-align: center; font-size: 34px;">
+    function startGame() {
+    document.getElementById("output").innerHTML = "Guess the number between 0-99";
+    secret_number = Math.floor(Math.random() * 100);
+    /* window.alert(secret_number); */
+    num_guesses = 0;
+}
     <button onclick="location.href='game2.html'" type="button"> Next Riddle</button>
       </body>
 </html>
