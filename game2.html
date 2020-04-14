@@ -1,17 +1,47 @@
 <html>
   <head>
     <style>
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: white;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: white;}
+</style>
+</head>
+<body>
+
+<div class="pagination">
+  <a href="#">&laquo;</a> 
+  <a href="https://nicole-kimm.github.io/game1.html">1</a> 
+  <a href="#">22</a>
+  <a href="https://nicole-kimm.github.io/game3.html">3</a>
+  <a href="https://nicole-kimm.github.io/game4.html">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+  <style>
+body {
+  background-color: pink;
+}
     </style>
   </head>
   <body>
     <h1> Riddle Me This </h1>
     <div id="media">
       <h2>Media</h2>
-      <img src="https://4.bp.blogspot.com/-202rqjSVyTo/W7IMcTQRWSI/AAAAAAABg-c/NWAepWhLip4B1z4KNghojtBTjSMDeebkgCLcBGAs/s1600/detective-mystry-to-solve.png" width="400" height="300"/>
+      <img src="https://4.bp.blogspot.com/-202rqjSVyTo/W7IMcTQRWSI/AAAAAAABg-c/NWAepWhLip4B1z4KNghojtBTjSMDeebkgCLcBGAs/s1600/detective-mystry-to-solve.png" width="700" height="600"/>
   </div>
   <div id="buttondivr2" style="text-align: center;">
      <button type="button" onclick="alert('The guard was the part of the robbery. Emergency doors open from inside to outside. So how can a door hit him as he was inside the building.')">Answer</button>
     <button onclick="location.href='game3.html'" type="button"> Next Riddle</button>
-    </div>
   </body>
 </html>
