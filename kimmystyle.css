@@ -1,7 +1,7 @@
- #buttondivnext {
+h3{ 
+ text-decoration:underline;
+}
+#buttondivnext {
   margin-bottom: 10px;
   font-size:  30px;
  }
-h3 { 
- text-decoration:underline;
-}
