@@ -1,24 +1,26 @@
+<!DOCTYPE html>
 <html>
   <head>
     <style>
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-}
+     .pagination a {
+       color: black;
+       float: left;
+       padding: 8px 16px;
+       text-decoration: none;
+     }
 
-.pagination a.active {
-  background-color: white;
-  color: white;
-}
+     .pagination a.active {
+       background-color: white;
+       color: white;
+     }
 
-.pagination a:hover:not(.active) {background-color: white;}
-</style>
-</head>
-<body>
-
-<div class="pagination">
+    .pagination a:hover:not(.active) {background-color: blue;}
+     p.solid {border-style: solid;}
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center;"> Riddle Me This </h1>
+    <div class="pagination">
       <a href="#">&laquo;</a> 
       <a href="https://nicole-kimm.github.io/game1.html" style="font-size:20px;">1</a>
       <a href="https://nicole-kimm.github.io/game2.html" style="font-size:20px;">2</a>
@@ -31,17 +33,16 @@
       <a href="https://nicole-kimm.github.io/game9.html" style="font-size:20px;">9</a>
       <a href="https://nicole-kimm.github.io/game10.html" style="font-size:20px;">10</a>
       <a href="#">&raquo;</a>
-</div>
-  
-  </head>
-  <body>
-    <h1> Riddle Me This </h1>
-    <div id="media">
-      <h2> Why was the guard arrested?</h2>
+    </div>
+    <br> 
+    <div id="media"  style="text-align: right bottom corner;">
       <img src="https://4.bp.blogspot.com/-202rqjSVyTo/W7IMcTQRWSI/AAAAAAABg-c/NWAepWhLip4B1z4KNghojtBTjSMDeebkgCLcBGAs/s1600/detective-mystry-to-solve.png" width="700" height="600"/>
   </div>
-  <div id="buttondivr2" style="text-align: center;">
-     <button type="button" onclick="alert('The guard was the part of the robbery. Emergency doors open from inside to outside. So how can a door hit him as he was inside the building.')">Answer</button>
-    <button onclick="location.href='game3.html'" type="button"> Next Riddle</button>
+    <br>
+  <p> class="solid">Why was the guard arrested </p>
+    <div id="buttondivr2" style="text-align: center;">
+      <button type="button" onclick="alert('The police do not give him an address, so if he knows where the crime scene is, most possibly he is the one who has committed the crime')">Answer</button>
+      <button onclick="location.href='game2.html'" type="button"> Next Riddle</button>
+    </div
   </body>
 </html>
