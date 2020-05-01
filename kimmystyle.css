@@ -5,3 +5,7 @@ h3{
   margin-bottom: 10px;
   font-size:  30px;
  }
+#grad1 {
+  background-color: blue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(purple, blue); /* Standard syntax (must be last) */
+}
