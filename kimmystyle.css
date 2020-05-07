@@ -7,7 +7,7 @@ h3{
  }
 #grad1 {
   background-color: blue; /* For browsers that do not support gradients */
-  background-image: linear-gradient(pink, white); /* Standard syntax (must be last) */
+  background-image: linear-gradient(white, pink; /* Standard syntax (must be last) */
 }
 #overflowTest {
   background: "background-color:slateblue;"
