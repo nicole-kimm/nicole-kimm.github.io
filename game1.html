@@ -5,10 +5,11 @@
   </head>
   <body>
     <script type="text/javascript">
-    function kimmysfunction() {
-        var checkanswer = document.getElementById("answer1");
-      if (checkanswer.checked) {
-        alert("Answer 1 picked");
+    function checkAnswer(kimmysoption) {
+      if (document.getElementById(kimmysoption).innerHTML == "He arrived at the crime scence, without knowing the address") {
+        alert("You are correct!");
+      } else {
+        alert("You are incorrect :( ");
       }
     }
     </script>
@@ -35,16 +36,15 @@
     <br>
     <div class="center"> 
       <p>Select your answer to the riddle:</p>
-  <input type="radio" id="answer1" name="answer" value="answer1" onclick="kimmysfunction()">
-  <label for="answer1">A witness saw him at the crime scene and reported him</label><br>
-  <input type="radio" id="answer2" name="answer" value="answer2" onclick="kimmysfunction()">
-  <label for="answer2">He did not get rid of all evidence</label><br>
-  <input type="radio" id="answer3" name="answer" value="answer3" onclick="kimmysfunction()">
-  <label for="answer3">He arrived at the crime scence, without knowing the address </label><br>
+  <input type="radio" id="answer1" name="answer" value="answer1" onclick="checkAnswer('option1')">
+  <label for="answer1" id="option1">A witness saw him at the crime scene and reported him</label><br>
+  <input type="radio" id="answer2" name="answer" value="answer2" onclick="checkAnswer('option2')">
+  <label for="answer2" id="option2">He did not get rid of all evidence</label><br>
+  <input type="radio" id="answer3" name="answer" value="answer3" onclick="checkAnswer('option3')">
+  <label for="answer3" id-"option3">He arrived at the crime scence, without knowing the address </label><br>
   <br>  
     </div>
     <div id="buttondivr1" style="text-align: center;">
-      <button type="button" onclick="alert('The police do not give him an address, so if he knows where the crime scene is, most possibly he is the one who has committed the crime')">Answer</button>
       <button onclick="location.href='game2.html'" type="button"> Next Riddle</button>
     </div
   </body>
