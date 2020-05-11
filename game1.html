@@ -5,10 +5,10 @@
   </head>
   <body onload="renderRiddle(0)">
     <script type="text/javascript">
-      var riddleImages= [
+      var riddleImages = [
         "https://i0.wp.com/www.bhavinionline.com/wp-content/uploads/2016/01/murder-mystery-how-did-police-solve-it-1.jpg?w=600&ssl=1", 
         "https://4.bp.blogspot.com/-202rqjSVyTo/W7IMcTQRWSI/AAAAAAABg-c/NWAepWhLip4B1z4KNghojtBTjSMDeebkgCLcBGAs/s1600/detective-mystry-to-solve.png"
-        ]
+      ]
       function checkAnswer(kimmysOption) {
         if (document.getElementById(kimmysOption).innerHTML == "He arrived at the crime scence, without knowing the address") {
           alert("You are correct!");
@@ -35,23 +35,23 @@
       <a href="#" onclick="renderRiddle(9);" style="font-size:20px;">10</a>
       <a href="#">&raquo;</a> 
     </div>
-       <br>
+    <br>
     <div id="media"  style="text-align: right bottom corner;">
       <img id="image" width="700" height="600" />
     </div>
     <br>
     <div class="center"> 
       <p>Select your answer to the riddle:</p>
-  <input type="radio" id="answer1" name="answer" value="answer1" onclick="checkAnswer('option1')">
-  <label for="answer1" id="option1">A witness saw him at the crime scene and reported him</label><br>
-  <input type="radio" id="answer2" name="answer" value="answer2" onclick="checkAnswer('option2')">
-  <label for="answer2" id="option2">He did not get rid of all evidence</label><br>
-  <input type="radio" id="answer3" name="answer" value="answer3" onclick="checkAnswer('option3')">
-  <label for="answer3" id-"option3">He arrived at the crime scence, without knowing the address </label><br>
-  <br>  
+      <input type="radio" id="answer1" name="answer" value="answer1" onclick="checkAnswer('option1')">
+      <label for="answer1" id="option1">A witness saw him at the crime scene and reported him</label><br>
+      <input type="radio" id="answer2" name="answer" value="answer2" onclick="checkAnswer('option2')">
+      <label for="answer2" id="option2">He did not get rid of all evidence</label><br>
+      <input type="radio" id="answer3" name="answer" value="answer3" onclick="checkAnswer('option3')">
+      <label for="answer3" id="option3">He arrived at the crime scence, without knowing the address </label><br>
+      <br>  
     </div>
     <div id="buttondivr1" style="text-align: center;">
       <button onclick="location.href='game2.html'" type="button"> Next Riddle</button>
-    </div
+    </div>
   </body>
 </html>
