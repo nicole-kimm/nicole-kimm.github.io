@@ -30,6 +30,42 @@
         "Correct Option 1"
         ]
       
+      var riddleOptions1 = [
+        "A witness saw him at the crime scene and reported him",
+        "A witness saw him at the crime scene and reported him",
+        "A witness saw him at the crime scene and reported him",
+        "A witness saw him at the crime scene and reported him",
+        "A witness saw him at the crime scene and reported him",
+        "A witness saw him at the crime scene and reported him",
+        "A witness saw him at the crime scene and reported him",
+        "A witness saw him at the crime scene and reported him",
+        "A witness saw him at the crime scene and reported him"
+        ]
+      
+      var riddleOptions2 = [
+        "He arrived at the crime scence, without knowing the address",
+        "He did not get rid of all evidence",
+        "He did not get rid of all evidence",
+        "He did not get rid of all evidence",
+        "He did not get rid of all evidence",
+        "He did not get rid of all evidence",
+        "He did not get rid of all evidence",
+        "He did not get rid of all evidence",
+        "He did not get rid of all evidence",
+        ]
+      
+      var riddleOptions3 = [
+        "The police do not give him an address, so if he knows where the crime scene is, most possibly he is the one who has committed the crime",
+        "option 3",
+        "option 3",
+        "option 3",
+        "option 3",
+        "option 3",
+        "option 3",
+        "option 3",
+        "option 3" 
+        ]
+      
       function checkAnswer(kimmysOption) {
         if (document.getElementById(kimmysOption).innerHTML == correctRiddleAnswers[currentRiddleNumber]) {
           alert("You are correct!");
@@ -40,6 +76,9 @@
       
       function renderRiddle(kimmysNumber) {
         document.getElementById("image").src = riddleImages[kimmysNumber];
+        document.getElementById("option1").innerHTML = firstIncorrectAnswers[kimmysNumber];
+        document.getElementBYId("option2").innerHTML = secondIncorrectAnswers[kimmysNumber];
+        document.getElementById("option3").innerHTML = correctRiddleAnswers[kimmysNumber];
       }
      
       function renderNextRiddle(currentRiddleNumber) {
@@ -74,11 +113,11 @@
     <div class="center"> 
       <p>Select your answer to the riddle:</p>
       <input type="radio" id="answer1" name="answer" value="answer1" onclick="checkAnswer('option1')">
-      <label for="answer1" id="option1">A witness saw him at the crime scene and reported him</label><br>
+      <label for="answer1" id="option1"></label><br>
       <input type="radio" id="answer2" name="answer" value="answer2" onclick="checkAnswer('option2')">
-      <label for="answer2" id="option2">He did not get rid of all evidence</label><br>
+      <label for="answer2" id="option2"></label><br>
       <input type="radio" id="answer3" name="answer" value="answer3" onclick="checkAnswer('option3')">
-      <label for="answer3" id="option3">He arrived at the crime scence, without knowing the address</label><br>
+      <label for="answer3" id="option3"></label><br>
       <br>  
     </div>
     <div id="buttondivr1" style="text-align: center;">
