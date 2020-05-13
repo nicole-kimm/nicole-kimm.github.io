@@ -17,15 +17,25 @@
         "https://www.riddlester.co/wp-content/uploads/2019/08/10-fish-are-in-a-tank-ariddle.jpg", 
         "https://propensityforcuriosity.com/blog/wp-content/uploads/2014/04/murder-riddle-1a.png"
       ]
+      
       function checkAnswer(kimmysOption) {
         if (document.getElementById(kimmysOption).innerHTML == "He arrived at the crime scence, without knowing the address") {
           alert("You are correct!");
         } else {
           alert("You are incorrect :( ");
         }
-      }
+      }     
+      
       function renderRiddle(kimmysNumber) {
         document.getElementById("image").src = riddleImages[kimmysNumber];
+      }
+     
+      function renderNextRiddle(currentRiddleNumber) {
+        currentRiddleNumber++;
+        if (currentRiddleNumber == riddleImages.length) {
+          currentRiddleNumber = 0;
+        }
+        renderRiddle(currentRiddleNumber);
       }
     </script>
     <h1 style="text-align: center;"> Riddle Me Thiss </h1>
@@ -59,7 +69,7 @@
       <br>  
     </div>
     <div id="buttondivr1" style="text-align: center;">
-      <button onclick="location.href='game2.html'" type="button"> Next Riddle</button>
+      <button onclick="renderNextRiddle(currentRiddleNumber)"> type="button"> Next Riddle</button>
     </div>
   </body>
 </html>
