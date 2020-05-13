@@ -18,8 +18,20 @@
         "https://propensityforcuriosity.com/blog/wp-content/uploads/2014/04/murder-riddle-1a.png"
       ]
       
+      var correctRiddleAnswers = [
+        "He arrived at the crime scence, without knowing the address",
+        "The police do not give him an address, so if he knows where the crime scene is, most possibly he is the one who has committed the crime",
+        "The house is circular, so it has no corners. So the maid cannot dust the corners of the house",
+        "He is lying. Windows freeze and get covered with ice from inside; the neighbor breathed on them from outside",
+        "The police do not give him an address, so if he knows where the crime scene is, most possibly he is the one who has committed the crime",
+        "The police do not give him an address, so if he knows where the crime scene is, most possibly he is the one who has committed the crime",
+        "It was a convertible",
+        "The police do not give him an address, so if he knows where the crime scene is, most possibly he is the one who has committed the crime",
+        "Correct Option 1"
+        ]
+      
       function checkAnswer(kimmysOption) {
-        if (document.getElementById(kimmysOption).innerHTML == "He arrived at the crime scence, without knowing the address") {
+        if (document.getElementById(kimmysOption).innerHTML == correctRiddleAnswers[currentRiddleNumber]) {
           alert("You are correct!");
         } else {
           alert("You are incorrect :( ");
