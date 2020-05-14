@@ -76,12 +76,12 @@
       
       function renderRiddle(kimmysNumber) {
         document.getElementById("image").src = riddleImages[kimmysNumber];
-        document.getElementById("option1").innerHTML = firstIncorrectAnswers[kimmysNumber];
-        document.getElementBYId("option2").innerHTML = secondIncorrectAnswers[kimmysNumber];
-        document.getElementById("option3").innerHTML = correctRiddleAnswers[kimmysNumber];
+        document.getElementById("option1").innerHTML = riddleOptions1[kimmysNumber];
+        document.getElementById("option2").innerHTML = riddleOptions2[kimmysNumber];
+        document.getElementById("option3").innerHTML = riddleOptions3[kimmysNumber];
       }
      
-      function renderNextRiddle(currentRiddleNumber) {
+      function renderNextRiddle() {
         currentRiddleNumber++;
         if (currentRiddleNumber == riddleImages.length) {
           currentRiddleNumber = 0;
