@@ -78,11 +78,18 @@
         if (kimmysNumber == riddleImages.length) {
           kimmysNumber = 0;
         }
+        // set current riddlenumber
         currentRiddleNumber = kimmysNumber
+        // set image
         document.getElementById("image").src = riddleImages[kimmysNumber];
+        // set riddle answer options
         document.getElementById("option1").innerHTML = riddleOptions1[kimmysNumber];
         document.getElementById("option2").innerHTML = riddleOptions2[kimmysNumber];
         document.getElementById("option3").innerHTML = riddleOptions3[kimmysNumber];
+        // deselect any answer options 
+        document.getElementById("answer1").checked = false;
+        document.getElementById("answer2").checked = false;
+        document.getElementById("answer3").checked = false;
       }
       
     </script>
