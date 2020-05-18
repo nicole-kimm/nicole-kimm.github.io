@@ -26,3 +26,8 @@ p.solid {
 .center {
   text-align: center;
 }
+
+#image {
+  display: block;
+  margin: auto;
+}
