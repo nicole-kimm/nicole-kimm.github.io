@@ -1,3 +1,8 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
 .pagination a {
   color: black;
   float: center;
